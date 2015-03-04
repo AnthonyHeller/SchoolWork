@@ -145,22 +145,22 @@ namespace EnterpriseSystems.Infrastructure.DAO
             {
                 var Appointment = new AppointmentVO
                 {
-                    Identity = (int)currentRow[AppointmentColumnsNames.Identity],
-                    EntityName = currentRow[AppointmentColumnsNames.EntityName].ToString(),
-                    EntityIdenty = (int)currentRow[AppointmentColumnsNames.EntityIdenty],
-                    SequenceNumber = (int)currentRow[AppointmentColumnsNames.SequenceNumber],
-                    FunctionType = currentRow[AppointmentColumnsNames.FunctionType].ToString(),
-                    AppointmentBegin = (DateTime?)currentRow[AppointmentColumnsNames.AppointmentBegin],
-                    AppointmentEnd = (DateTime?)currentRow[AppointmentColumnsNames.AppointmentEnd],
-                    TimezoneDescript = currentRow[AppointmentColumnsNames.TimezoneDescript].ToString(),
-                    Status = currentRow[AppointmentColumnsNames.Status].ToString(),
-                    RecordStatus = currentRow[AppointmentColumnsNames.RecordStatus].ToString(),
-                    CreatedDate = (DateTime?)currentRow[AppointmentColumnsNames.CreatedDate],
-                    CreatedUserId = currentRow[AppointmentColumnsNames.CreatedUserId].ToString(),
-                    CreatedProgramCode = currentRow[AppointmentColumnsNames.CreatedProgramCode].ToString(),
-                    LastUpdatedDate = (DateTime?)currentRow[AppointmentColumnsNames.LastUpdatedDate],
-                    LastUpdatedUserId = currentRow[AppointmentColumnsNames.LastUpdatedUserId].ToString(),
-                    LastUpdatedProgramCode = currentRow[AppointmentColumnsNames.LastUpdatedProgramCode].ToString()
+                    Identity = (int)currentRow[AppointmentColumnNames.Identity],
+                    EntityName = currentRow[AppointmentColumnNames.EntityName].ToString(),
+                    EntityIdentity = (int)currentRow[AppointmentColumnNames.EntityIdentity],
+                    SequenceNumber = (int)currentRow[AppointmentColumnNames.SequenceNumber],
+                    FunctionType = currentRow[AppointmentColumnNames.FunctionType].ToString(),
+                    AppointmentBegin = (DateTime?)currentRow[AppointmentColumnNames.AppointmentBegin],
+                    AppointmentEnd = (DateTime?)currentRow[AppointmentColumnNames.AppointmentEnd],
+                    TimezoneDescript = currentRow[AppointmentColumnNames.TimezoneDescription].ToString(),
+                    Status = currentRow[AppointmentColumnNames.Status].ToString(),
+                    RecordStatus = currentRow[AppointmentColumnNames.RecordStatus].ToString(),
+                    CreateDate = (DateTime?)currentRow[AppointmentColumnNames.CreatedDate],
+                    CreateduserID = currentRow[AppointmentColumnNames.CreatedUserId].ToString(),
+                    CreatedProgramCode = currentRow[AppointmentColumnNames.CreatedProgramCode].ToString(),
+                    LastUpdatedDate = (DateTime?)currentRow[AppointmentColumnNames.LastUpdatedDate],
+                    LastUpdatedUserId = currentRow[AppointmentColumnNames.LastUpdatedUserId].ToString(),
+                    LastUpdatedProgramCode = currentRow[AppointmentColumnNames.LastUpdatedProgramCode].ToString()
                 };
             }
             return Appointment;
@@ -209,7 +209,7 @@ namespace EnterpriseSystems.Infrastructure.DAO
                CommentText = currentRow[CommentColumnNames.CommentText].ToString(),
                RecordStatus = currentRow[CommentColumnNames.RecordStatus].ToString(),
                CreatedDate = (DateTime)currentRow[CommentColumnNames.CreatedDate],
-               CreatedUserId = currentRow[CommentColumnNames.CreatedUserId].ToString(),
+               CreatedUserID = currentRow[CommentColumnNames.CreatedUserId].ToString(),
                CreatedProgramCode = currentRow[CommentColumnNames.CreatedProgramCode].ToString(),
                LastUpdatedDate = (DateTime)currentRow[CommentColumnNames.LastUpdatedDate],
                LastUpdatedUserId = currentRow[CommentColumnNames.LastUpdatedUserId].ToString(),
@@ -253,18 +253,18 @@ namespace EnterpriseSystems.Infrastructure.DAO
             {
                 var ReferenceNumber = new ReferenceNumberVO
                 {
-                    Identity = (int)currentRow[ReferenceNumberColumnsNames.Identity],
-                    EntityName = currentRow[ReferenceNumberColumnsNames.EntityName].ToString(),
-                    EntityIdentity = (int)currentRow[ReferenceNumberColumnsNames.EntityIdentity],
-                    SoutheasternReferenceNumberType = (int)currentRow[ReferenceNumberColumnsNames.SoutheasternReferenceNumberType],
-                    ReferenceNumber = currentRow[ReferenceNumberColumnsNames.RefrenceNumber].ToString(),
-                    RecordStatus = currentRow[ReferenceNumberColumnsNames.RecordStatus].ToString(),
-                    CreatedDate = (DateTime?)currentRow[ReferenceNumberColumnsNames.CreatedDate],
-                    CreatedUserId = currentRow[ReferenceNumberColumnsNames.CreatedUserId].ToString(),
-                    CreatedProgramCode = currentRow[ReferenceNumberColumnsNames.CreatedProgramCode].ToString(),
-                    LastUpdatedDate = (DateTime?)currentRow[ReferenceNumberColumnsNames.LastUpdatedDate],
-                    LastUpdatedUserId = currentRow[ReferenceNumberColumnsNames.LastUpdatedUserId].ToString(),
-                    LastUpdatedProgramCode = currentRow[ReferenceNumberColumnsNames.LastUpdatedProgramCode].ToString()
+                    Identity = (int)currentRow[ReferenceNumberColumnNames.Identity],
+                    EntityName = currentRow[ReferenceNumberColumnNames.EntityName].ToString(),
+                    EntityIdentity = (int)currentRow[ReferenceNumberColumnNames.EntityIdentity],
+                    SEReferencNumberType = (int)currentRow[ReferenceNumberColumnNames.ReferenceNumberType],
+                    RefrenceNumber = currentRow[ReferenceNumberColumnNames.ReferenceNumber].ToString(),
+                    RecordStatus = currentRow[ReferenceNumberColumnNames.RecordStatus].ToString(),
+                    CreatedDate = (DateTime?)currentRow[ReferenceNumberColumnNames.CreatedDate],
+                    CreatedUserID = currentRow[ReferenceNumberColumnNames.CreatedUserId].ToString(),
+                    CreatedProgramCode = currentRow[ReferenceNumberColumnNames.CreatedProgramCode].ToString(),
+                    LastUpdatedDate = (DateTime?)currentRow[ReferenceNumberColumnNames.LastUpdatedDate],
+                    LastUpdatedUserId = currentRow[ReferenceNumberColumnNames.LastUpdatedUserId].ToString(),
+                    LastUpdatedProgramCode = currentRow[ReferenceNumberColumnNames.LastUpdatedProgramCode].ToString()
                 };
             }
             return ReferenceNumbers;
@@ -304,11 +304,11 @@ namespace EnterpriseSystems.Infrastructure.DAO
                var Stop = new StopVO
                 {
                     Identity = (int)currentRow[StopColumnNames.Identity],
-                    EntityName = currentRow[StopColumnNames.Status].ToString(),
+                    EntityName = currentRow[StopColumnNames.EntityName].ToString(),
                     EntityIdentity = (int)currentRow[StopColumnNames.EntityIdentity],
                     RoleType = currentRow[StopColumnNames.RoleType].ToString(),
-                    StopNumber = currentRow[StopColumnNames.TypeCode].ToString(),
-                    CustomerAlias = currentRow[StopColumnNames.ConsumerClassificationType].ToString(),
+                    StopNumber = currentRow[StopColumnNames.StopNumber].ToString(),
+                    CustomerAlias = currentRow[StopColumnNames.CustomerAlias].ToString(),
                     OrganizationName = currentRow[StopColumnNames.LastUpdatedProgramCode].ToString(),
                     AddressLine1 = currentRow[StopColumnNames.CreatedUserId].ToString(),
                     AddressLine2 = currentRow[StopColumnNames.CreatedProgramCode].ToString(),
@@ -318,7 +318,7 @@ namespace EnterpriseSystems.Infrastructure.DAO
                     AddressPostalCode = currentRow[StopColumnNames.LastUpdatedProgramCode].ToString(),
                     RecordStatus = currentRow[StopColumnNames.LastUpdatedProgramCode].ToString(),
                     CreatedDate = (DateTime?)currentRow[StopColumnNames.CreatedDate],
-                    CreatedUserId = currentRow[StopColumnNames.LastUpdatedProgramCode].ToString(),
+                    CreatedUserID = currentRow[StopColumnNames.LastUpdatedProgramCode].ToString(),
                     CreatedProgramCode = currentRow[StopColumnNames.LastUpdatedProgramCode].ToString(),
                     LastUpdatedDate = (DateTime?)currentRow[StopColumnNames.CreatedDate],
                     LastUpdatedUserId = currentRow[StopColumnNames.LastUpdatedProgramCode].ToString(),
